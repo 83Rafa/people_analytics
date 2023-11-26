@@ -14,7 +14,13 @@
   <p>Com o intuito de entregar valor no curto prazo, esses podem ser separados em blocos para que ações de acordo com a devida urgência sejam tomadas a seu devido tempo.</p>
   
   <h1>Plano de Implantação</h1>
-  <p>Após a realização das análises constatou-se que 4 variáveis foram classificadas com "fortes" no que tange a influênciar o funcionário deixar a empresa, e o plano de ação mais imediato irá focar nesses itens. São eles: <strong>Tempo de carreira</strong>, <strong>Faz hora extras?</strong>, <strong>Quantidade de ações da empresa</strong> e <strong>Tempo na empresa</strong></p>
+  <p>Após a realização das análises constatou-se que 4 variáveis foram classificadas com "fortes" no que tange a influênciar o funcionário deixar a empresa, e o plano de ação mais imediato irá focar nesses itens. São eles: <strong>Tempo de carreira</strong>, <strong>Faz hora extras?</strong>, <strong>Quantidade de ações da empresa</strong> e <strong>Tempo na empresa</strong>.</p>
+  <div align="center">
+    <figure>
+      <img src='imagens/analise_iv_prioridade.png' align="center">
+      <figcaption><br><p><small>As 4 variáveis de maior influência no <i>turnover</i></small></p></figcaption>
+    </figure>
+  </div>
   <p>Para facilitar a implatação das mudanças necessárias e o acompanhamento de sua aplicação, sugerimos o framework <a href="5W2H.md">5W2H</a>, onde as ações de melhorias necessárias, os respectivos responsáveis e possíveis custos ficam dispostos de maneira clara e objetiva.</p>
   <p>5W2H Para Redução de Turnover</p>
   <div align="center">
