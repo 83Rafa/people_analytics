@@ -105,7 +105,7 @@
 </ol>
 <p>Após realizadas a AED e a Análise de IV encontramos as variaveis que apresentam maior influência no índice foco do estudo, o turnover da empresa. E 4 delas foram consideradas com peso forte de influência.</p>
 <div align="center">
-    <img src="imagens/analise_iv_prioridade.png" width=600>
+    <img src="imagens/analise_iv.png" width=600>
 </div>
 <br>
 <p>Também a partir das análises realizadas, foi possível desenvolver uma análise SWOT para comtribuir no plano de implandação das ações necessárias.</p>
