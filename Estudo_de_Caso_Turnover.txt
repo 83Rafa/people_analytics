@@ -2,18 +2,7 @@
 <h1>Análise de Turnover de Funcionários de Uma Empresa<H1>
 <img href="turnover1.jpeg" align="center">
 <br>
-<p>1. Contexto</p>
-<p>2. Base de Dados</p>
-<p>2.1 ETL - Extração, Tratamento e Carregamento</p>
-<p>3. Análises</p>
-<p>3.1 Análise Exploratória dos Dados (AED)</p>
-<p>3.2 Análise de IV (Information Value)</p>
-<p>4. Relatório</p>
-<p>5. Plano de Ação</p>
-
-
-<h3>1. Contexto</h3>
-<p>O que é o Turover?</p>
+<p>O que é o Turnover?</p>
 <p>Turnover é o indicador que mede a rotatividade dos trabalhadores nas empresas em um determinado período de tempo (geralmente, a taxa de turnover considera o periodo de 12 meses) seja por quais forem os motivos: demissão voluntária, saída para outras empresas, entre outros.</p>
 
 <p>Como o significado de turnover é rotatividade, estamos falando sobre a substituição de empregados no posto, não incluindo casos em que o cargo é extinto da empresa.</p>
@@ -32,6 +21,29 @@
 <li>Impacto na satisfação dos colaboradores: A rotatividade constante pode afetar a satisfação dos colaboradores, podendo levar a uma queda na moral e no engajamento.</li>
 <li>Custos financeiros e de tempo: Quando um funcionário sai da empresa, é preciso arcar com os custos de contratação de um novo colaborador. Isso inclui anúncios de vagas, triagem de currículos, entrevistas, treinamento e integração.</li>
 <li>Impacto na imagem da empresa: Uma alta taxa de turnover pode afetar a reputação da empresa, tornando-a menos atraente para futuros talentos.</li>
+
+
+
+<h3>1. Contexto</h3>
+<p>Seguindo a metodologia CRISP-MP, o desenvolvimento do projeto seguirá as seguintes etapas:</p>
+<ol>
+<li>Entendimento do Negócio</li>
+<ol>
+<li>O objetivo da análise é compreender quais fatores estão levando a empresa a apresentar uma taxa de turnover elevada e criar um plano de ação para reduzir o percentual em 6%.</li>
+<li>Assumindo que recebemos uma base de dados sólida, podemos considerar encontrar quais variáveis estão influenciando a saída do colaborador da empresa.</li>
+<li>Além de gerar uma despesa desnecessária e não colaborar para a resolução do problema, a má interpretação dos dados pode ampliar a percentual de turnover. Por esse motívo a Análise Exploratória de Dados se faz necessária para melhor compreensão de cada variável.</li>
+<li>Todo processo de pesquisa, implantação e acompanhamento de novos indicadores gera novos custos. O intuito do projeto é sempre que possível manter essas despesas dentro da folha atual ou que essas sejam mitigadas pela redução da despesa que o atual percentual de turnover está gerando.</li>
+<li>O projeto será considerado bem sucedido se dentro de <strong>6 meses<strong> após sua implantação percentual de turnover for reduzido em <strong>6%.</strong></li>
+<li>Entendimento dos Dados</li>
+<li>Preparação dos Dados</li>
+<li>Modelagem e Análise</li>
+<li>Validação</li>
+<li>Plano de Implantação</li>
+</ol>
+
+
+
+
 
 
 <h3>2. Base de Dados</h3>
