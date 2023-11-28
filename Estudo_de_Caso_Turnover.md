@@ -126,7 +126,7 @@
 </ul>
 <hr>
 <h3>6. Plano de Implantação</h3>
-<p><a href="relatorio.md">Acesse aqui.</a>
+<p>Acesse <a href="relatorio.md">aqui</a> a relatório final com o <strong>Plano de Implementação</strong> e o dashboard com as métricas do estudo.</p>
 <hr>
 
 <h3>7. Conclusão</h3> 
