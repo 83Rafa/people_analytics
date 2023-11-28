@@ -26,6 +26,10 @@
   <div align="center">
     <img src="imagens/plano_de_acao_5w2h.png">
   </div>
+  <hr>
+  <h3>Dashboard Power BI</h3>
+  <p>Acesse <a href="https://app.powerbi.com/view?r=eyJrIjoiMmJlZmIyMjItMDhmNy00NzZlLWIzMjItNmQ0ZWU3NzIyMTEyIiwidCI6ImVhNjc4ZGI2LWI2YTQtNDZiMy04YjFmLTJjMDZlOGVlOGUzNiJ9">aqui</a> o dashboard com as principais métricas de influência no turnuver da empresa de tecnologia.</p>
+  <hr> 
   <div align="center">
     <p><a href="Estudo_de_Caso_Turnover.md">retornar</a></p>
   </div>
