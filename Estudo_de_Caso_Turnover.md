@@ -42,7 +42,7 @@
 <ol>
     <li>O objetivo da análise é compreender quais fatores estão levando a empresa a apresentar uma taxa de turnover elevada e criar um plano de ação para reduzir o percentual em 6%.</li>
     <li>Assumindo que recebemos uma base de dados sólida, podemos considerar encontrar quais variáveis estão influenciando a saída do colaborador da empresa.</li>
-    <li>Além de gerar uma despesa desnecessária e não colaborar para a resolução do problema, a má interpretação dos dados pode ampliar a percentual de turnover. Por esse motívo a Análise Exploratória de Dados se faz necessária para melhor compreensão de cada variável.</li>
+    <li>A rotatividade de fucionários trás um alto custo financeiro para empresa por diversos fatores, como por exemplo: o tempo despendido pelo RH na contratação e treinamento de novos funcionários e a diminuição da capacidade produtiva da equipe pela perda de funcionários com conhecimento avançado sobre o negócio.</li>
     <li>Todo processo de pesquisa, implantação e acompanhamento de novos indicadores gera novos custos. O intuito do projeto é sempre que possível manter essas despesas dentro da folha atual ou que essas sejam mitigadas pela redução da despesa que o atual percentual de turnover está gerando.</li>
     <li>O projeto será considerado bem sucedido se dentro de <strong>6 meses</strong> após sua implantação percentual de turnover for reduzido em <strong>6%.</strong></li>
 </ol>
