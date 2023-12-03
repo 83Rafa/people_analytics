@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fddca6;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px; 
+  font-size: 15px; 
+  padding: 25px 100px 450px 15px ;
+  text-align: justify;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <ul>
+        <li><a href="#contexto">Contexto</a></li>
+        <li><a href="#objetivo">Objetivo</a></li>
+        <li><a href="#metodologia">Metodoligia</a></li>
+        <ol>
+            <li><a href="#entendimento">Entendimento do Negócio</a></li>
+            <li><a href="#dados">Entendimento dos Dados</a></li>
+            <li><a href="#analise">Análise</a></li>
+            <li><a href="#validacao">Validação</a></li>
+            <li><a href="#implementacao">Plano de Implementação</a></li>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+            </ul>
+        <ol>
+    </ul>
+    <ul>
+        <li><a href="#conclusao">Conclusão</a></li>
+        <li><a href="#referencias">Referências</a></li>
+    </ul>
+</div>
+
+<div class="main" >
+    <div id="contexto">
+        <h1>Diminuição de <i>Turnover</i> <small><i>(People Analytics)</i></small></h1>
+        <div>
+            <figure>
+                <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/turnover1.jpg" alt="Banner turnover" width="100%">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <h3>Contexto</h3>
+        <p><i>Turnover</i> é o indicador que mede a rotatividade dos trabalhadores nas empresas em um determinado período de tempo (geralmente, a taxa de <i>turnover</i> considera o periodo de 12 meses) seja por quais forem os motivos: demissão voluntária, saída para outras empresas, entre outros. 
+            Como o significado de <i>turnover</i> é rotatividade, estamos falando sobre a substituição de empregados no posto, não incluindo casos em que o cargo é extinto da empresa.</p>
+        <p>Embora seja até certo ponto normal e esperada na gestão de recursos humanos de qualquer empresa, a rotatividade passa a ser um desafio quando ocorre em altas taxas, porque gera um passivo com demissões e contratações. 
+            É por essa razão que o cálculo de <i>turnover</i> de funcionários deve fazer parte da rotina em qualquer negócio.</p>
+        <p>Especialistas da área de gestão recomendam que a empresa trabalhe com uma taxa de <i>turnover</i> entre 5% e 10% ao ano</p>
+        <p>Uma alta taxa de <i>turnover</i> pode gerar vários impactos indesejados na empresa:</p>
+        <ul>
+            <li><strong>Queda na produtividade:</strong> A substituição frequente de funcionários pode resultar em interrupções nos fluxos de trabalho e na perda de conhecimento institucional.</li>
+            <li><strong>Impacto na satisfação dos colaboradores:</strong> A rotatividade constante pode afetar a satisfação dos colaboradores, podendo levar a uma queda na moral e no engajamento.</li>
+            <li><strong>Custos financeiros e de tempo:</strong> Quando um funcionário sai da empresa, é preciso arcar com os custos de contratação de um novo colaborador. Isso inclui anúncios de vagas, triagem de currículos, entrevistas, treinamento e integração.</li>
+            <li><strong>Impacto na imagem da empresa:</strong> Uma alta taxa de <i>turnover</i> pode afetar a reputação da empresa, tornando-a menos atraente para futuros talentos.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="objetivo">
+        <h3>Objetivo</h3>
+        <p>A empresa está sofrendo com a alta rotatividade de funcionários. O objetivo da análise é encontrar os fatores de maior peso na decisão do funcionário de deixá-la para assim recuperar e manter sua capacidade produtiva e aquilíbrio nas contas.</p>
+    </div>
+    <hr>
+    <div id="metodologia">
+        <h3>Metodologia</h3>
+        <p>O desenvolvimento do projeto se deu através da metodologia <strong>CRISP-DM</strong>, uma abreviação de Cross Industry Standard Process for Data Mining, que pode ser traduzido como Processo Padrão Inter-Indústrias para Mineração de Dados. 
+            É um modelo de processo de mineração de dados que descreve abordagens comumente usadas por especialistas em mineração de dados para atacar problemas.</p>
+        <h3>1. Entendimento do Negócio</h3>
+        <ol>
+            <li>O objetivo da análise é compreender quais fatores estão levando a empresa a apresentar uma taxa de <i>turnover</i> elevada e criar um plano de ação para reduzir o percentual, a princípio, em 6%.</li>
+            <li>Assumindo que recebemos uma base de dados sólida, podemos considerar encontrar quais variáveis estão influenciando a saída do colaborador da empresa.</li>
+            <li>A rotatividade de fucionários trás um alto custo financeiro para empresa por diversos fatores, como por exemplo: o tempo despendido pelo RH na contratação e treinamento de novos funcionários e a diminuição da capacidade produtiva da equipe pela perda de funcionários com conhecimento avançado sobre o negócio.</li>
+            <li>Todo processo de pesquisa, implantação e acompanhamento de novos indicadores gera novos custos. O intuito do projeto é sempre que possível manter essas despesas dentro da folha atual ou que essas sejam mitigadas pela redução da despesa que o atual percentual de <i>turnover</i> está gerando.</li>
+            <li>O projeto será considerado bem sucedido se dentro de <strong>6 meses</strong> após sua implantação percentual de <i>turnover</i> for reduzido em <strong>6%.</strong></li>
+        </ol>
+    </div>
+    <hr>
+    <div id="entendimento">
+        <h3>2. Entendimento dos Negócio</h3>
+        <ol>
+            <li>A base de dados utilizada neste projeto foi disponibilizapa no curso de <i>Data Analytics</i> da Escola <a href="https://www.preditiva.ai/">Preditiva.ai</a> e contém, além da variável <i>turnover</i>, mais 19 variáveis que podem ser exploradas e analisadas para encontrar a possível causa do evento.</li>
+            <li>O ETL (Extração, Tranformação e Carregamento) é uma peça fundamental no contexto da gestão e análise de dados. Sua importância eleva a simples transformação de dados brutos em informações utilizáveis, ele é a chave sobre o qual repousam a solidez e a precisão das análises empresariais.</li>
+        </ol>
+    </div>
+    <hr>
+    <div id="dados">
+        <h3>3. Entendimento dos Dados</h3>
+        <p>A base de dados fornecida para este projeto já possui todo o tratamento e se encontra pronta para as análises.</p>
+        <div align="center">
+            <figure>
+                <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/dados.png" width=900>
+                <figcaption></figcaption>
+            </figure>
+            <figure>
+                <p>Metadados</p>
+                <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/metadados.png" alt="Tabela Explicativa de cada variável" width=900>
+                <figcaption><small>Metadados de todos o itens analisados</small></figcaption>
+            </figure>
+        </div>
+    </div>
+    <hr>
+    <div id="analise">
+        <h3>4. Análise</h3>
+        <p>Foram escolhidas e realizadas duas técnicas para a  análises da base: A Análise Exploratória dos Dados <strong>(AED)</strong> e Information Value <strong>(IV)</strong>.</p>
+        <ol>
+            <li><strong>AED - Análise Exploratória dos Dados</strong></li>
+            <br>
+            <div align="center">
+                <figure>
+                    <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/AED_saiu_da_empresa.png" width=350 alt="Gráfico de pizza com percentual para funcionários que saíram e que ficaram na empresa.">
+                    <figcaption><br><small>Percentual de <i>turnover</i>.</small></figcaption>
+                </figure>
+            </div>
+            <br>
+            <p>Realizada com objetivo de compreender melhor o cenário da empresa e gerar <i>insights</i> de possíveis pontos de impactos positivos ou negatívos, além de embasar resultados gerados na análise seguinte.</p>
+            <p>Essa análise permite a extração de informações evitando assim suposições, nos permitindo observar os dados de forma mais objetiva.</p>
+            <p>Requisitos importantes:</p>
+            <ul>
+                <li>Uma visão clara de como os dados foram coletados (população e amostra)</li>
+                <li>A identificação dos tipos de variáveis (qualitativas ou quantitativas)</li>
+                <li>Uma coerência da análise com os objetivos do trabalho</li>
+                <li>A representação gráfica das variáveis quantitativas e qualitativas</li>
+                <li>A análise de medidas de posição, dispersão, gráficos e de possíveis relações entre as variáveis</li>
+                <li>A identificação de anomalias e situações atípicas</li>
+            </ul>
+            <br>
+            <li><strong>Information Value - IV</strong></li>
+            <p>O <i>Information Value</i> é uma técnica estatística usada para quantificar a importância de uma variável na previsão de um resultado. Ele ajuda a entender quais variáveis são mais significativas em um modelo preditivo.</p>
+            <p>É uma medida essencial na seleção de variáveis. Algumas razões são:<p>
+            <ul>
+                <li>Identificação de variáveis relevantes</li>
+                <li>Redução de dimensionalidade</li>
+                <li>Melhoria da precisão do modelo</li>
+                <li>Interpretação dos resultados</li>
+            </ul>
+            <p>O <strong>IV</strong> é usado em várias áreas, incluindo:</p>
+            <ul>
+                <li><strong>Recursos Humanos:</strong> Para identificar os fatores que influenciam a retenção de funcionários.</li>
+                <li><strong>Marketing:</strong> Para identificar quais fatores influenciam mais as conversões.</li>
+                <li><strong>Finanças:</strong> Para avaliar quais variáveis são mais importantes na previsão de riscos de crédito.</li>
+                <li><strong>Operações:</strong> Para entender quais fatores afetam a eficiência operacional.</li>
+            </ul>
+        </ol>
+        <p>Após realizadas a AED e a Análise de IV encontramos as variaveis que apresentam maior influência no índice foco do estudo, o <i>turnover</i> da empresa. E 4 delas foram consideradas com peso forte de influência.</p>
+        <div align="center">
+            <figure>
+                <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/analise_iv.png" alt="Análise de força das 19 variáveis" width=600>
+                <figcaption><br><small>Nível de peso para cada variável analisada.</small></figcaption>
+            </figure>
+        </div>
+        <br>
+        <p>Também a partir das análises realizadas, foi possível desenvolver uma análise SWOT para comtribuir no plano de implandação das ações necessárias.</p>
+        <div align="center">
+            <p>Análise SWOT</p>
+            <figure>
+                <img src="ihttps://github.com/83Rafa/people_analytics/blob/main/imagens/analise_swot.png" alt="Gráfico da Análise SWOT." width=600>
+                <figcaption><small>Pontos fortes e fracos, oportunidades e ameaças para empresa.</small></figcaption>
+            </figure>
+        </div><br>
+        <p>Das forças da empresa e oportunidades temos que:</p>
+        <ol>
+            <li>3/4 dos funcionários possuem maturidade profissional e se identificam com a cultura da empresa.</li>
+            <li>Menos de um terço dos funcionários fazem hora extra, o que significa que, em grande parte, as necessidades de produção da empresa é compreendida dentro da jornada de trabalho celetista.</li>
+            <li>Hora Extra é uma variável de peso na decisão de saída, medidas que influenciem em sua diminuição também afetarão o <i>turnover</i> consideravelmente.</li>
+            <li>Mais da metade dos funcionários possuem participação acionária da empresa. Como funciona essa participação? Se o propósito for que todo funcionário queria ter parte, será necessário torná-la mais compreensiva e atrativa.</li>
+        </ol>
+        <p>Dos fatores a serem melhorados ou riscos externos a serem diminuidos temos a inovação e adaptação de setores, áreas informais e culturais atualizadas. Não há como competir com as big techs em questões financeiras, mas mostrar para o funcionário sua importância junto a um senso de propósito pode ter um peso maior do que apenas o incentivo financeiro.</p>
+    </div>
+    <hr>
+    <div id="validacao">
+        <h3>5. Validação</h3>
+        <p>Definido a ferramenta de implantação, o critério de sucesso e as métricas de acompanhamento, o projeto é apresentado ao cliente com as seguintes etapas:</p>
+        <ul>
+            <li>Objetivo de reduzir em 6% a taxa de <i>turnover</i> em até 6 meses.</li>
+            <li>Atualização dos fatores que estava levando à saida de funcionários.</li>
+            <li>Apresentação das análises realizadas (<strong>AED</strong> e <strong>IV</strong>).</li>
+            <li>Projeto para melhoria imediata.</li>
+            <li>Continuidade da melhoria a longo prazo, com as variáveis consideradas com peso médio.</li>
+            <li>Framework <strong>5W2H</strong> para aplicação das ações necessárias.</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="implementacao">
+        <h3>6. Plano de Implementação</h3> 
+        <p>Com base nos dados fornecidos de um período de 12 meses, a empresa analisada possui um <i>turnover</i> de 16%, 6% acima da média considerada saudável por especialistas (5% a 10%).</p> 
+        <p>Esse índice foi calculado a partir do total de 1.470 funcionários, dos quais 237 deixaram a empresa. Para entender melhor as causas dessa alta rotatividade, foi realizada uma investigação com base em 19 fatores que poderiam influenciar na decisão dos funcionários de sair da empresa: Uma <strong>Análise Exploratória</strong> para melhor compreensão de cada variável isoladamente e uma <strong>Análide de IV</strong> para separar e focar nas variáveis de maior peso de influência.</strong> 
+        
+        <p>Ao final da Análise Exploratória obtivemos lista de <i>insights</i> gerada através de constatações e algumas questões levantadas. Esses <i>insights</i> podem contribuir para um plano de ação ao final da análise.</p>
+        
+        <p>Em seguida foi realização da Análide de IV, o que tornou possível encontrar e classificar os fatores de maior peso na ocorrência de <i>turnover</i>s, conforme a tabela a seguir:</p>
+        <p>Os Fatores com classificação fraco e muito fraco não são itens de preocupação e podem ser descartados quanto a seu peso na influência do <i>turnover</i>, já os que foram classificados como fortes e médios requerem atenção dos gestores / responsáveis.</p>
+        <p>Com o intuito de entregar valor no curto prazo, esses podem ser separados em blocos para que ações de acordo com a devida urgência sejam tomadas a seu devido tempo.</p>       
+        <p>Após a realização das análises constatou-se que 4 variáveis foram classificadas com "fortes" no que tange a influênciar o funcionário deixar a empresa, e o plano de ação mais imediato irá focar nesses itens. São eles: <strong>Tempo de carreira</strong>, <strong>Faz hora extras?</strong>, <strong>Quantidade de ações da empresa</strong> e <strong>Tempo na empresa</strong>.</p>
+        <div align="center">
+            <figure>
+                <img src='https://github.com/83Rafa/people_analytics/blob/main/imagens/analise_iv_prioridade.png' alt="4 itens de peso forte a serem priorizados.">
+                <figcaption><br><p><small>As 4 variáveis de maior influência (peso <strong>forte</strong>) no <i><i>turnover</i></i></small></p></figcaption>
+            </figure>
+        </div>
+        <p>Para facilitar a implatação das mudanças necessárias e o acompanhamento de sua aplicação, sugerimos o framework <strong>5W2H</strong>, onde as ações de melhorias necessárias, os respectivos responsáveis e possíveis custos ficam dispostos de maneira clara e objetiva.</p>
+        <div align="center">
+            <figure>
+                <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/5w2h.png" alt="Framework 5W2H">
+                <figcaption><small>Framework para aplicação dos objetivos da empresa.</small></figcaption>
+            </figure>
+        </div>
+        <p>O framework 5W2H é uma ferramenta que ajuda a planejar e executar ações de forma eficiente e eficaz. Ele consiste em responder a sete perguntas básicas sobre o que se pretende fazer, por que, quem, onde, quando, como e quanto custa. Essas perguntas são:</p>
+        <ul>
+            <li><strong>What?</strong> (O que?): define o objetivo ou a meta da ação, de forma clara e específica.</li>
+            <li><strong>Why?</strong> (Por que?): explica a razão ou a motivação para realizar a ação, mostrando sua importância e benefícios.</li>
+            <li><strong>Who?</strong> (Quem?): atribui as responsabilidades e os papéis de cada pessoa ou equipe envolvida na ação, definindo quem faz o quê.</li>
+            <li><strong>Where?</strong> (Onde?): indica o local ou o ambiente onde a ação será realizada, considerando os recursos e as condições disponíveis.</li>
+            <li><strong>When?</strong> (Quando?): estabelece o prazo ou a frequência para a realização da ação, levando em conta as prioridades e os riscos.</li>
+            <li><strong>How?</strong> (Como?): descreve o método ou o processo para executar a ação, detalhando as etapas, as ferramentas e as técnicas necessárias.</li>
+            <li><strong>How much?</strong> (Quanto custa?): calcula o custo ou o investimento para realizar a ação, estimando os gastos com materiais, mão de obra, equipamentos, etc.</li>
+        </ul>
+        <p>O framework 5W2H pode contribuir na redução de <i>turnover</i> de funcionários ao facilitar a comunicação, a organização e a gestão das atividades dentro de uma empresa. Ao usar essa ferramenta, os gestores podem:</p>
+        <ul>
+            <li>Alinhar as expectativas e os objetivos dos funcionários com os da empresa, aumentando o engajamento e a satisfação.</li>
+            <li>Delegar as tarefas de forma clara e objetiva, evitando conflitos, sobrecargas e retrabalhos.</li>
+            <li>Acompanhar o desempenho e os resultados dos funcionários, dando feedbacks e reconhecimentos.</li>
+            <li>Identificar e resolver os problemas e as dificuldades dos funcionários, oferecendo suporte e capacitação.</li>
+            <li>Otimizar os recursos e os processos, reduzindo os custos e os desperdícios.</li>
+        </ul>
+        <p>5W2H aplicado no plano de ação para a redução de <i>turnover</i>.</p>
+        <div align="center">
+            <figure>
+            <img src="https://github.com/83Rafa/people_analytics/blob/main/imagens/plano_de_acao_5w2h.png" alt="Tabela 5W2H com plano de ação para diminuição de <i>turnover</i>.">
+            <figcaption>Plano de ação com medidas para otimizar os 4 fatores de maior peso no <i>turnover</i>.</figcaption>
+            </figure>
+        </div>
+    </div>          
+    <hr>
+    <div id="dashboard">
+        <h3>Dashboard Power BI</h3>
+        <p>Acesse <a href="https://app.powerbi.com/view?r=eyJrIjoiMmJlZmIyMjItMDhmNy00NzZlLWIzMjItNmQ0ZWU3NzIyMTEyIiwidCI6ImVhNjc4ZGI2LWI2YTQtNDZiMy04YjFmLTJjMDZlOGVlOGUzNiJ9">aqui</a> o dashboard com as principais métricas de influência no turnuver da empresa de tecnologia.</p>
+    </div>
+    <hr> 
+    <div id="conclusao">
+        <h3>7. Conclusão</h3> 
+        <p>O resultado dessa análise e posteriormente das variáveis com peso médio de influência em <i>turnover</i>s tem potencial para diminuir o indice a valores baixíssimos, resultando assim em um quadro de funcionários saudável, maduro e identificado com a cultura e propósitos da empresa, criando uma relação positiva de ganho para ambos os lados.</p>
+        <p>Toda essa atualização pode não só economizar centena de milhares para a empresa como também aumentar sua capacidade produtiva gerando outras centenas de milhares. Além de impactar positivamente na imagem da empresa no mercado de trabalho, pois aumenta sua atravitidade para outros profissionais.</p>
+        <p>Em tempos onde ESG valoriza consideravelmente a empresa, esse pode ser considerado seu primeiro passo em direção a uma administração e governaça mais consciente.</p>
+    </div>
+    <hr><br>
+    <div id="referencias">
+        <h3>8. Referências</h3>
+        <ul>
+            <li><a href="https://www.preditiva.ai/blog/como-realizar-a-extracao-e-preparacao-de-dados-em-projetos">Preditiva.ai - Como realizar a extração e preparação de dados em projetos?</a></li>
+            <li><a href="https://fia.com.br/blog/<i>turnover</i>/">FIA Business School - <i>turnover</i>: o que é, como calcular a fórmula e impactos na empresa</a></li>
+            <li><a href="https://www.gupy.io/blog/<i>turnover</i>">Gupy - <i>turnover</i>: o que é, como calcular e qual o impacto na empresa</a></li>
+            <li><a href="https://www.ibilce.unesp.br/Home/Departamentos/CiencCompEstatistica/Adriana/analise-exploratoria-de-dados.pdf">Unesp - Análise exploratória de dados</a></li>
+            <li><a href="https://www.thebilab.com.br/post/information-value-analise-de-dados">The BI Lab - Information Value (IV): O que é, Como Calcular e sua Importância para a Análise de Dados</a></li>
+            <li><a href="https://blog.reachr.com.br/recrutamento-e-selecao-quanto-custa-para-empresa/">Rearch - Recrutamento e seleção: quanto custa para a empresa?</a></li>
+        </ul>
+    </div>
+    <br>
+</div>
+   
+</body>
+</html> 
