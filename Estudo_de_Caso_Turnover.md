@@ -112,7 +112,15 @@
 <div align="center">
     <p>Análise SWOT</p>
     <img src="imagens/analise_swot.png" width=600>
-</div>
+</div><br>
+<p>Das forças da empresa e oportunidades temos que:</p>
+<ol>
+    <li>3/4 dos funcionários possuem maturidade profissional e se identificam com a cultura da empresa.</li>
+    <li>Menos de um terço dos funcionários fazem hora extra, o que significa que, em grande parte, as necessidades de produção da empresa é compreendida dentro da jornada de trabalho celetista.</li>
+    <li>Hora Extra é uma variável de peso na decisão de saída, medidas que influenciem em sua diminuição também afetarão o turnover consideravelmente.</li>
+    <li>Mais da metade dos funcionários possuem participação acionária da empresa. Como funciona essa participação? Se o propósito for que todo funcionário queria ter parte, será necessário torná-la mais compreensiva e atrativa.</li>
+</ol>
+<p>Dos fatores a serem melhorados ou riscos externos a serem diminuidos temos a inovação e adaptação de setores, áreas informais e culturais atualizadas. Não há como competir com as big techs em questões financeiras, mas mostrar para o funcionário sua importância junto a um senso de propósito pode ter um peso maior do que apenas o incentivo financeiro.</p>
 <hr>
 <h3>5. Validação</h3>
 <p>Definido a ferramenta de implantação, o critério de sucesso e as métricas de acompanhamento, o projeto é apresentado ao cliente com as seguintes etapas:</p>
