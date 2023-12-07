@@ -43,6 +43,19 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
 </style>
 </head>
 <body>
@@ -141,32 +154,65 @@ body {
     <hr>
     <div id="analise">
         <h3>4. Análise</h3>
-        <p>Foram escolhidas e realizadas duas técnicas para a  análises da base: A Análise Exploratória dos Dados <strong>(AED)</strong> e Information Value <strong>(IV)</strong>.</p>
+        <p>Para esse cenário foram realizadas duas técnicas para a análises: A Análise Exploratória dos Dados <strong>(AED)</strong> e Information Value <strong>(IV)</strong>.</p>
         <ol>
             <li><strong>AED - Análise Exploratória dos Dados</strong></li>
             <br>
-            <div align="center">
-                <figure>
-                    <img src="imagens/AED_saiu_da_empresa.png" width=350 alt="Gráfico de pizza com percentual para funcionários que saíram e que ficaram na empresa.">
-                    <figcaption><br><small>Percentual de <i>turnover</i>.</small></figcaption>
-                </figure>
-            </div>
-            <br>
             <p>Realizada com objetivo de compreender melhor o cenário da empresa e gerar <i>insights</i> de possíveis pontos de impactos positivos ou negatívos, além de embasar resultados gerados na análise seguinte.</p>
             <p>Essa análise permite a extração de informações evitando assim suposições, nos permitindo observar os dados de forma mais objetiva.</p>
-            <p>Requisitos importantes:</p>
+            <p>Com a EAD foi possível olhar objetivamente para cada variável:</p>
             <ul>
-                <li>Uma visão clara de como os dados foram coletados (população e amostra)</li>
-                <li>A identificação dos tipos de variáveis (qualitativas ou quantitativas)</li>
-                <li>Uma coerência da análise com os objetivos do trabalho</li>
-                <li>A representação gráfica das variáveis quantitativas e qualitativas</li>
-                <li>A análise de medidas de posição, dispersão, gráficos e de possíveis relações entre as variáveis</li>
-                <li>A identificação de anomalias e situações atípicas</li>
+                <li>Os dados são de uma população de 1470 funcionários que foram coletados de um banco de dados e forncidos em um arquivo xlsx.)</li>
+                <li>Das 19 variáveis da base, 11 são quantitativas, 5 qualitativas ordinais e 3 qualitativas nominais</li>
+                <li>O propósito da verificação individual de cada variável foi gerar insights que pudessem contextualizar com o atual problema que a empresa enfrenta.</li>
             </ul>
+            <h4>Principais Fatores de Influência no <i>Turnover</i></h4>
+            <p>Gráficos gerados na análise exploratória de dados</p>
+            
+            <div class="row">
+                <div class="column">
+                    <figure>
+                        <img src="imagens/AED_saiu_da_empresa.png" alt="gráfico de pizza: saiu da empresa" style="width:100%">
+                        <figcaption><small>16% está 6% do índice considerado saudável de turnover em uma empresa.</small></figcaption>
+                    </figure>
+                    
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="imagens/boxplot_idade.png" alt="boxplot da idade dos funcionários" style="width:100%">
+                        <figcaption><small>Distribuição da idade dos funcionários possui uma concentração maior na faixa entre 31 e 43 anos.</small></figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="imagens/hora_extra.png" alt="gráfico de pizza para hora estra" style="width:100%">
+                        <figcaption><small>72% das necessidades de produção da empresa são atendidas pela jornada celetista.</small></figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <figure>
+                        <img src="imagens/acoes_da_empresa.png" alt="gráfico de barras para ações da empresa" style="width:100%">
+                        <figcaption><small>É preciso compreender melhor a dinâmica da participação acionária para funcionários.</small></figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="imagens/pareto_salarios.png" alt="pareto para salários" style="width:100%">
+                        <figcaption><small>62% dos funcionários têm salários de té 6 mil.</small></figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure>
+                        <img src="imagens/tempo_de_empresa.png" alt="gráfico de barras para tempo de empresa" style="width:100%">
+                        <figcaption><small>Quase 60% dos funcionários tem até 5 anos de empresa</small></figcaption>
+                    </figure>
+                </div>
             <br>
             <li><strong>Information Value - IV</strong></li>
             <p>O <i>Information Value</i> é uma técnica estatística usada para quantificar a importância de uma variável na previsão de um resultado. Ele ajuda a entender quais variáveis são mais significativas em um modelo preditivo.</p>
-            <p>É uma medida essencial na seleção de variáveis. Algumas razões são:<p>
+            <p>É uma medida essencial na seleção de variáveis. <p>
             <ul>
                 <li>Identificação de variáveis relevantes</li>
                 <li>Redução de dimensionalidade</li>
@@ -174,15 +220,8 @@ body {
                 <li>Interpretação dos resultados</li>
             </ul>
             <br>
-            <p>O <strong>IV</strong> é usado em várias áreas, incluindo:</p>
-            <ul>
-                <li><strong>Recursos Humanos:</strong> Para identificar os fatores que influenciam a retenção de funcionários.</li>
-                <li><strong>Marketing:</strong> Para identificar quais fatores influenciam mais as conversões.</li>
-                <li><strong>Finanças:</strong> Para avaliar quais variáveis são mais importantes na previsão de riscos de crédito.</li>
-                <li><strong>Operações:</strong> Para entender quais fatores afetam a eficiência operacional.</li>
-            </ul>
         </ol>
-        <p>Após realizadas a AED e a Análise de IV encontramos as variaveis que apresentam maior influência no índice foco do estudo, o <i>turnover</i> da empresa. E 4 delas foram consideradas com peso forte de influência.</p>
+        <p>Após realizadas a Análise de IV pode-se rankear as variaveis que apresentam maior influência no índice foco do estudo, o <i>turnover</i> da empresa. E 4 delas foram consideradas com peso forte de influência.</p>
         <div align="center">
             <figure>
                 <img src="imagens/analise_iv.png" alt="Análise de força das 19 variáveis" width=600>
