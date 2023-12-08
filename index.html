@@ -50,6 +50,18 @@ body {
 .row {
   display: flex;
 }
+/* zoom na imagem */
+.row img{
+   width: 100%;
+   height: 100%;
+   -webkit-transition: -webkit-transform .5s ease;
+   transition: transform .5s ease;
+}
+
+.row:hover img{
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+}
 
 /* Create three equal columns that sits next to each other */
 .column {
@@ -222,7 +234,7 @@ body {
             <p>Após realizadas a Análise de IV pode-se rankear as variaveis que apresentam maior influência no índice foco do estudo, o <i>turnover</i> da empresa. E 4 delas foram consideradas com peso forte de influência.</p>
             <div align="center">
                 <figure>
-                    <img src="imagens/analise_iv.png" alt="Análise de força das 19 variáveis" width=600>
+                    <img src="imagens/analise_iv.png" alt="Análise de força das 19 variáveis" width=400>
                     <figcaption><br><small>Nível de peso para cada variável analisada.</small></figcaption>
                 </figure>
             </div>
